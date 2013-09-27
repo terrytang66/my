@@ -13,12 +13,10 @@ h2 {
   color:black;
 }
 #article,
-#project,
 #aboutme {
   margin:30px auto 0;
 }
 #article ul,
-#project ul,
 #aboutme p {
   margin:0 2em;
 }
@@ -28,23 +26,7 @@ h2 {
 #article ul {
   line-height:1.8;
 }
-#project li {
-  margin:8px 8px 0 0;
-}
-#project a {
-  display:inline-block;
-  border:1px solid #ccc;
-  padding:2px;
-}
-#project a:hover {
-  border:2px solid #A10000;
-  padding:1px;
-}
-#project img {
-  display:block;
-  width:100px;
-  height:100px;
-}
+
 #aboutme {
   line-height:2.2;
 }
@@ -66,26 +48,6 @@ h2 {
   </ul>
 </section>
 
-<section id="project">
-  <h2>Project</h2>
-  <ul class="fn-clear">
-    <li class="fn-left">
-      <a href="/project/plant.html" title="图片加工厂"><img src="/static/images/plant.png" alt="图片加工厂" /></a>
-    </li>
-    <li class="fn-left">
-      <a href="/project/light.html" title="Android 屏保"><img src="/static/images/light.gif" alt="Android 屏保" /></a>
-    </li>
-    <li class="fn-left">
-      <a href="http://2.gy/aaNu" title="Chrome扩展-快递查询应用"><img src="/static/images/kuaidi.png" alt="快递查询应用" /></a>
-    </li>
-    <li class="fn-left">
-      <a href="http://itunes.apple.com/us/app/bao-bao-jiao-lian/id538261867?mt=8&uo=4" title="宝宝教练"><img src="http://a2.mzstatic.com/us/r1000/107/Purple/v4/6f/ff/4d/6fff4ddd-bf5c-6efc-3884-0809407a09be/mza_4643124410096853757.175x175-75.jpg" alt="宝宝教练-logo" /></a>
-    </li>
-    <li class="fn-left">
-      <a href="https://itunes.apple.com/app/memix-pro/id559730363?mt=8" title="TTCall"><img src="/static/images/tt-call-icon.png" alt="TTCall-logo" /></a>
-    </li>
-  </ul>
-</section>
 
 <section id="aboutme">
   <h2>About me</h2>
@@ -120,7 +82,6 @@ moveSection(location.hash);
 
 if (location.pathname === '/') {
   document.getElementById('link-article').onclick = goTo;
-  document.getElementById('link-project').onclick = goTo;
   document.getElementById('link-aboutme').onclick = goTo;
 }
 
